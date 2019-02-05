@@ -1,0 +1,24 @@
+{% extends "otree/WaitPage.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+
+{% if last_interation %}
+<font size="6">
+    All your partner interactions are finished...
+</font>
+{% else %}
+<font size="6">
+    A new interaction is about to begin...
+</font>
+{% endif %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<p>Waiting for everyone to finish interactions with their {{ interaction }} Partner.</p>
+<br>
+
+{% endblock %}

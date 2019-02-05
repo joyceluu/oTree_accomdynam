@@ -1,0 +1,444 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Stage 4: Questionnaire B
+{% endblock %}
+
+{% block content %}
+
+    <head>
+
+    <style type="text/css">
+        table tr#ROWodd {background-color:#ededed;}
+        table tr#ROWeven {background-color:white;}
+    </style>
+
+    </head>
+    <body BGCOLOR=#ffffff TEXT=#000000>
+    <H4>Instructions</H4>
+    <p>
+        On the following pages, there are phrases describing people's behaviors. Please use the rating scale below to describe
+        how accurately each statement describes <em>you</em>. Describe yourself as  you  generally are now, not as you wish
+        to be in  the future. Describe yourself as you honestly see yourself, in relation to other people you know of  the same
+        sex as you  are, and roughly your same age.  So that you can describe yourself in  an honest manner, your responses will
+        be kept in  absolute confidence. Please read each statement carefully,  and then fill in the bubble that corresponds
+        to your reply.
+    </p>
+
+    <!--{% for Q in form %}-->
+        <!--{% formfield Q %}-->
+    <!--{% endfor %}-->
+
+    <hr>
+    <form action="/Example.php" method="POST">
+        <table border =0>
+            <th><pre>-----------------------------</pre></th>
+            <th><pre><small>        Very      <br>    Inaccurate    </small></pre></th>
+            <th><pre><small>    Moderately    <br>    Inaccurate    </small></pre></th>
+            <th><pre><small>Neither Inaccurate<br>   nor Accurate   </small></pre></th>
+            <th><pre><small>    Moderately    <br>    Accurate    </small></pre></th>
+            <th><pre><small>      Very       <br>    Accurate    </small></pre></th>
+            <tr id="ROWodd">
+                <td> 1. Tend to vote for conservative political candidates.</td>
+                <td align=center><input type="radio" name="Q01" value ="1"></td>
+                <td align=center><input type="radio" name="Q01" value ="2"></td>
+                <td align=center><input type="radio" name="Q01" value ="3"></td>
+                <td align=center><input type="radio" name="Q01" value ="4"></td>
+                <td align=center><input type="radio" name="Q01" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 2. Have frequent mood swings.</td>
+                <td align=center><input type="radio" name="Q02" value ="1"></td>
+                <td align=center><input type="radio" name="Q02" value ="2"></td>
+                <td align=center><input type="radio" name="Q02" value ="3"></td>
+                <td align=center><input type="radio" name="Q02" value ="4"></td>
+                <td align=center><input type="radio" name="Q02" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 3. Am not easily bothered by things.</td>
+                <td align=center><input type="radio" name="Q03" value ="1"></td>
+                <td align=center><input type="radio" name="Q03" value ="2"></td>
+                <td align=center><input type="radio" name="Q03" value ="3"></td>
+                <td align=center><input type="radio" name="Q03" value ="4"></td>
+                <td align=center><input type="radio" name="Q03" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 4. Believe in the importance of art.</td>
+                <td align=center><input type="radio" name="Q04" value ="1"></td>
+                <td align=center><input type="radio" name="Q04" value ="2"></td>
+                <td align=center><input type="radio" name="Q04" value ="3"></td>
+                <td align=center><input type="radio" name="Q04" value ="4"></td>
+                <td align=center><input type="radio" name="Q04" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 5. Am the life of the party.</td>
+                <td align=center><input type="radio" name="Q05" value ="1"></td>
+                <td align=center><input type="radio" name="Q05" value ="2"></td>
+                <td align=center><input type="radio" name="Q05" value ="3"></td>
+                <td align=center><input type="radio" name="Q05" value ="4"></td>
+                <td align=center><input type="radio" name="Q05" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 6. Am skilled in handling social situations.</td>
+                <td align=center><input type="radio" name="Q06" value ="1"></td>
+                <td align=center><input type="radio" name="Q06" value ="2"></td>
+                <td align=center><input type="radio" name="Q06" value ="3"></td>
+                <td align=center><input type="radio" name="Q06" value ="4"></td>
+                <td align=center><input type="radio" name="Q06" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 7. Am always prepared.</td>
+                <td align=center><input type="radio" name="Q07" value ="1"></td>
+                <td align=center><input type="radio" name="Q07" value ="2"></td>
+                <td align=center><input type="radio" name="Q07" value ="3"></td>
+                <td align=center><input type="radio" name="Q07" value ="4"></td>
+                <td align=center><input type="radio" name="Q07" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 8. Make plans and stick to them.</td>
+                <td align=center><input type="radio" name="Q08" value ="1"></td>
+                <td align=center><input type="radio" name="Q08" value ="2"></td>
+                <td align=center><input type="radio" name="Q08" value ="3"></td>
+                <td align=center><input type="radio" name="Q08" value ="4"></td>
+                <td align=center><input type="radio" name="Q08" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 9. Dislike myself.</td>
+                <td align=center><input type="radio" name="Q09" value ="1"></td>
+                <td align=center><input type="radio" name="Q09" value ="2"></td>
+                <td align=center><input type="radio" name="Q09" value ="3"></td>
+                <td align=center><input type="radio" name="Q09" value ="4"></td>
+                <td align=center><input type="radio" name="Q09" value ="5"></td>
+            </tr>
+            <td> </td>
+            <td><small><center>Very<br> Inaccurate</center></td>
+            <td><small><center>Moderately<br> Inaccurate</center></td>
+            <td><small><center>Neither Inaccurate <br> nor Accurate</center></td>
+            <td><small><center>Moderately<br>Accurate</center></td>
+            <td><small><center>Very<br>Accurate</center></td></small>
+            <tr id="ROWeven">
+                <td > 10. Respect others.</td>
+                <td align=center><input type="radio" name="Q10" value ="1"></td>
+                <td align=center><input type="radio" name="Q10" value ="2"></td>
+                <td align=center><input type="radio" name="Q10" value ="3"></td>
+                <td align=center><input type="radio" name="Q10" value ="4"></td>
+                <td align=center><input type="radio" name="Q10" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 11. Insult people.</td>
+                <td align=center><input type="radio" name="Q11" value ="1"></td>
+                <td align=center><input type="radio" name="Q11" value ="2"></td>
+                <td align=center><input type="radio" name="Q11" value ="3"></td>
+                <td align=center><input type="radio" name="Q11" value ="4"></td>
+                <td align=center><input type="radio" name="Q11" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 12. Seldom feel blue.</td>
+                <td align=center><input type="radio" name="Q12" value ="1"></td>
+                <td align=center><input type="radio" name="Q12" value ="2"></td>
+                <td align=center><input type="radio" name="Q12" value ="3"></td>
+                <td align=center><input type="radio" name="Q12" value ="4"></td>
+                <td align=center><input type="radio" name="Q12" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 13. Don't like to draw attention to myself.</td>
+                <td align=center><input type="radio" name="Q13" value ="1"></td>
+                <td align=center><input type="radio" name="Q13" value ="2"></td>
+                <td align=center><input type="radio" name="Q13" value ="3"></td>
+                <td align=center><input type="radio" name="Q13" value ="4"></td>
+                <td align=center><input type="radio" name="Q13" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 14. Carry out my plans.</td>
+                <td align=center><input type="radio" name="Q14" value ="1"></td>
+                <td align=center><input type="radio" name="Q14" value ="2"></td>
+                <td align=center><input type="radio" name="Q14" value ="3"></td>
+                <td align=center><input type="radio" name="Q14" value ="4"></td>
+                <td align=center><input type="radio" name="Q14" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 15. Am not interested in abstract ideas.</td>
+                <td align=center><input type="radio" name="Q15" value ="1"></td>
+                <td align=center><input type="radio" name="Q15" value ="2"></td>
+                <td align=center><input type="radio" name="Q15" value ="3"></td>
+                <td align=center><input type="radio" name="Q15" value ="4"></td>
+                <td align=center><input type="radio" name="Q15" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 16. Make friends easily.</td>
+                <td align=center><input type="radio" name="Q16" value ="1"></td>
+                <td align=center><input type="radio" name="Q16" value ="2"></td>
+                <td align=center><input type="radio" name="Q16" value ="3"></td>
+                <td align=center><input type="radio" name="Q16" value ="4"></td>
+                <td align=center><input type="radio" name="Q16" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 17. Tend to vote for liberal political candidates.</td>
+                <td align=center><input type="radio" name="Q17" value ="1"></td>
+                <td align=center><input type="radio" name="Q17" value ="2"></td>
+                <td align=center><input type="radio" name="Q17" value ="3"></td>
+                <td align=center><input type="radio" name="Q17" value ="4"></td>
+                <td align=center><input type="radio" name="Q17" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 18. Know how to captivate people.</td>
+                <td align=center><input type="radio" name="Q18" value ="1"></td>
+                <td align=center><input type="radio" name="Q18" value ="2"></td>
+                <td align=center><input type="radio" name="Q18" value ="3"></td>
+                <td align=center><input type="radio" name="Q18" value ="4"></td>
+                <td align=center><input type="radio" name="Q18" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 19. Believe that others have good intentions.</td>
+                <td align=center><input type="radio" name="Q19" value ="1"></td>
+                <td align=center><input type="radio" name="Q19" value ="2"></td>
+                <td align=center><input type="radio" name="Q19" value ="3"></td>
+                <td align=center><input type="radio" name="Q19" value ="4"></td>
+                <td align=center><input type="radio" name="Q19" value ="5"></td>
+            </tr>
+            <td> </td>
+            <td><small><center>Very<br> Inaccurate</center></td>
+            <td><small><center>Moderately<br> Inaccurate</center></td>
+            <td><small><center>Neither Inaccurate <br> nor Accurate</center></td>
+            <td><small><center>Moderately<br>Accurate</center></td>
+            <td><small><center>Very<br>Accurate</center></td></small>
+            <tr id="ROWeven">
+                <td> 20. Do just enough work to get by.</td>
+                <td align=center><input type="radio" name="Q20" value ="1"></td>
+                <td align=center><input type="radio" name="Q20" value ="2"></td>
+                <td align=center><input type="radio" name="Q20" value ="3"></td>
+                <td align=center><input type="radio" name="Q20" value ="4"></td>
+                <td align=center><input type="radio" name="Q20" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 21. Find it difficult to get down to work.</td>
+                <td align=center><input type="radio" name="Q21" value ="1"></td>
+                <td align=center><input type="radio" name="Q21" value ="2"></td>
+                <td align=center><input type="radio" name="Q21" value ="3"></td>
+                <td align=center><input type="radio" name="Q21" value ="4"></td>
+                <td align=center><input type="radio" name="Q21" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 22. Panic easily.</td>
+                <td align=center><input type="radio" name="Q22" value ="1"></td>
+                <td align=center><input type="radio" name="Q22" value ="2"></td>
+                <td align=center><input type="radio" name="Q22" value ="3"></td>
+                <td align=center><input type="radio" name="Q22" value ="4"></td>
+                <td align=center><input type="radio" name="Q22" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 23. Avoid philosophical discussions.</td>
+                <td align=center><input type="radio" name="Q23" value ="1"></td>
+                <td align=center><input type="radio" name="Q23" value ="2"></td>
+                <td align=center><input type="radio" name="Q23" value ="3"></td>
+                <td align=center><input type="radio" name="Q23" value ="4"></td>
+                <td align=center><input type="radio" name="Q23" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 24. Accept people as they are.</td>
+                <td align=center><input type="radio" name="Q24" value ="1"></td>
+                <td align=center><input type="radio" name="Q24" value ="2"></td>
+                <td align=center><input type="radio" name="Q24" value ="3"></td>
+                <td align=center><input type="radio" name="Q24" value ="4"></td>
+                <td align=center><input type="radio" name="Q24" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 25. Do not enjoy going to art museums.</td>
+                <td align=center><input type="radio" name="Q25" value ="1"></td>
+                <td align=center><input type="radio" name="Q25" value ="2"></td>
+                <td align=center><input type="radio" name="Q25" value ="3"></td>
+                <td align=center><input type="radio" name="Q25" value ="4"></td>
+                <td align=center><input type="radio" name="Q25" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 26. Pay attention to details.</td>
+                <td align=center><input type="radio" name="Q26" value ="1"></td>
+                <td align=center><input type="radio" name="Q26" value ="2"></td>
+                <td align=center><input type="radio" name="Q26" value ="3"></td>
+                <td align=center><input type="radio" name="Q26" value ="4"></td>
+                <td align=center><input type="radio" name="Q26" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 27. Keep in the background.</td>
+                <td align=center><input type="radio" name="Q27" value ="1"></td>
+                <td align=center><input type="radio" name="Q27" value ="2"></td>
+                <td align=center><input type="radio" name="Q27" value ="3"></td>
+                <td align=center><input type="radio" name="Q27" value ="4"></td>
+                <td align=center><input type="radio" name="Q27" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 28. Feel comfortable with myself.</td>
+                <td align=center><input type="radio" name="Q28" value ="1"></td>
+                <td align=center><input type="radio" name="Q28" value ="2"></td>
+                <td align=center><input type="radio" name="Q28" value ="3"></td>
+                <td align=center><input type="radio" name="Q28" value ="4"></td>
+                <td align=center><input type="radio" name="Q28" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 29. Waste my time.</td>
+                <td align=center><input type="radio" name="Q29" value ="1"></td>
+                <td align=center><input type="radio" name="Q29" value ="2"></td>
+                <td align=center><input type="radio" name="Q29" value ="3"></td>
+                <td align=center><input type="radio" name="Q29" value ="4"></td>
+                <td align=center><input type="radio" name="Q29" value ="5"></td>
+            </tr>
+            <td> </td>
+            <td><small><center>Very<br> Inaccurate</center></td>
+            <td><small><center>Moderately<br> Inaccurate</center></td>
+            <td><small><center>Neither Inaccurate <br> nor Accurate</center></td>
+            <td><small><center>Moderately<br>Accurate</center></td>
+            <td><small><center>Very<br>Accurate</center></td></small>
+            <tr id="ROWeven">
+                <td> 30. Get back at others.</td>
+                <td align=center><input type="radio" name="Q30" value ="1"></td>
+                <td align=center><input type="radio" name="Q30" value ="2"></td>
+                <td align=center><input type="radio" name="Q30" value ="3"></td>
+                <td align=center><input type="radio" name="Q30" value ="4"></td>
+                <td align=center><input type="radio" name="Q30" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 31. Get chores done right away.</td>
+                <td align=center><input type="radio" name="Q31" value ="1"></td>
+                <td align=center><input type="radio" name="Q31" value ="2"></td>
+                <td align=center><input type="radio" name="Q31" value ="3"></td>
+                <td align=center><input type="radio" name="Q31" value ="4"></td>
+                <td align=center><input type="radio" name="Q31" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 32. Don't talk a lot.</td>
+                <td align=center><input type="radio" name="Q32" value ="1"></td>
+                <td align=center><input type="radio" name="Q32" value ="2"></td>
+                <td align=center><input type="radio" name="Q32" value ="3"></td>
+                <td align=center><input type="radio" name="Q32" value ="4"></td>
+                <td align=center><input type="radio" name="Q32" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 33. Am often down in the dumps.</td>
+                <td align=center><input type="radio" name="Q33" value ="1"></td>
+                <td align=center><input type="radio" name="Q33" value ="2"></td>
+                <td align=center><input type="radio" name="Q33" value ="3"></td>
+                <td align=center><input type="radio" name="Q33" value ="4"></td>
+                <td align=center><input type="radio" name="Q33" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 34. Shirk my duties.</td>
+                <td align=center><input type="radio" name="Q34" value ="1"></td>
+                <td align=center><input type="radio" name="Q34" value ="2"></td>
+                <td align=center><input type="radio" name="Q34" value ="3"></td>
+                <td align=center><input type="radio" name="Q34" value ="4"></td>
+                <td align=center><input type="radio" name="Q34" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 35. Do not like art.</td>
+                <td align=center><input type="radio" name="Q35" value ="1"></td>
+                <td align=center><input type="radio" name="Q35" value ="2"></td>
+                <td align=center><input type="radio" name="Q35" value ="3"></td>
+                <td align=center><input type="radio" name="Q35" value ="4"></td>
+                <td align=center><input type="radio" name="Q35" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 36. Often feel blue.</td>
+                <td align=center><input type="radio" name="Q36" value ="1"></td>
+                <td align=center><input type="radio" name="Q36" value ="2"></td>
+                <td align=center><input type="radio" name="Q36" value ="3"></td>
+                <td align=center><input type="radio" name="Q36" value ="4"></td>
+                <td align=center><input type="radio" name="Q36" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 37. Cut others to pieces.</td>
+                <td align=center><input type="radio" name="Q37" value ="1"></td>
+                <td align=center><input type="radio" name="Q37" value ="2"></td>
+                <td align=center><input type="radio" name="Q37" value ="3"></td>
+                <td align=center><input type="radio" name="Q37" value ="4"></td>
+                <td align=center><input type="radio" name="Q37" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 38. Have a good word for everyone.</td>
+                <td align=center><input type="radio" name="Q38" value ="1"></td>
+                <td align=center><input type="radio" name="Q38" value ="2"></td>
+                <td align=center><input type="radio" name="Q38" value ="3"></td>
+                <td align=center><input type="radio" name="Q38" value ="4"></td>
+                <td align=center><input type="radio" name="Q38" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 39. Don't see things through.</td>
+                <td align=center><input type="radio" name="Q39" value ="1"></td>
+                <td align=center><input type="radio" name="Q39" value ="2"></td>
+                <td align=center><input type="radio" name="Q39" value ="3"></td>
+                <td align=center><input type="radio" name="Q39" value ="4"></td>
+                <td align=center><input type="radio" name="Q39" value ="5"></td>
+            </tr>
+            <tr id="ROWeven">
+                <td> 40. Feel comfortable around people.</td>
+                <td align=center><input type="radio" name="Q40" value ="1"></td>
+                <td align=center><input type="radio" name="Q40" value ="2"></td>
+                <td align=center><input type="radio" name="Q40" value ="3"></td>
+                <td align=center><input type="radio" name="Q40" value ="4"></td>
+                <td align=center><input type="radio" name="Q40" value ="5"></td>
+            </tr>
+            <tr id="ROWodd">
+                <td> 41. Have little to say.</td>
+                <td align=center><input type="radio" name="Q41" value ="1"></td>
+                <td align=center><input type="radio" name="Q41" value ="2"></td>
+                <td align=center><input type="radio" name="Q41" value ="3"></td>
+                <td align=center><input type="radio" name="Q41" value ="4"></td>
+                <td align=center><input type="radio" name="Q41" value ="5"></td>
+            </tr>
+        </table>
+        <hr>
+
+        </ul>
+
+    </form></small>
+    </body>
+
+    <button class="otree-btn-next btn btn-primary" style="font-size:18px" onClick="return nextButton()">Next</button>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+    function getNumString(number) {
+        if (number < 10) {
+            return "Q0" + number.toString()
+        } else {
+            return "Q" + number.toString()
+        }
+    }
+
+    function isChecked(q_number) {
+        var q_str = getNumString(q_number)
+        var q = document.getElementsByName(q_str)
+        var q_checked = false;
+        for(var i = 0; i < q.length; i++){
+            if(q[i].checked){
+                q_checked = true;
+                break;
+            }
+        }
+        return q_checked
+    }
+
+    function nextButton() {
+        var all_checked = true;
+        var unfinished = [];
+        for (var i = 1; i <= 41; i++) {
+            if (isChecked(i) == false) {
+                all_checked = false;
+                unfinished.push(i);
+            }
+        }
+        if (all_checked) {
+            return true;
+        } else {
+            alert("Please answer all questions before continuing. Unanswered questions: " + unfinished.join(", "))
+            return false;
+        }
+    }
+
+
+</script>
+
+{% endblock %}
