@@ -25,7 +25,7 @@ class WelcomePage(Page):
 
 class QuestionPage(Page):
     form_model = 'player'
-    form_fields = ['gender', 'major', 'langs']  #, 'attend_hs', 'hs_input']
+    form_fields = ['gender', 'major'] #, 'langs']  #, 'attend_hs', 'hs_input']
 
     def is_displayed(self):
         return self.subsession.round_number == 1
@@ -484,7 +484,7 @@ class WaitPageBetweenPartner(WaitPage):
         interaction = round_to_interact[self.round_number // Constants.rounds_per_partner]
 
         return {'interaction': interaction,
-                'last_interact': interaction == "Fifth"}
+                'last_interaction': interaction == "Fifth"}
 
 
 class PersonalityTestPage(Page):
@@ -535,26 +535,26 @@ class PaymentPage(Page):
 
 
 page_sequence = [
-    # WelcomePage,
-    # QuestionPage,
-    # IntroStageTwo,
-    # SetUtilPage_Movie,
-    # SetUtilPage_Pizza,
-    # InstructionsPage0,
-    # InstructionsPage1,
-    # InstructionsPage2,
-    # InstructionsPage3,
-    # InstructionsPage4,
-    # InstructionsPage5,
-    # InstructionsPage6,
-    # InstructionsPage7,
-    # SetOppModelPage1,
-    # SetOppModelPage2,
-    # WaitingPageTimer,
-    # AccomDynamPage,
-    # WaitingPage,
-    # Results,
-    # WaitPageBetweenPartner,
+    WelcomePage,
+    QuestionPage,
+    IntroStageTwo,
+    SetUtilPage_Movie,
+    SetUtilPage_Pizza,
+    InstructionsPage0,
+    InstructionsPage1,
+    InstructionsPage2,
+    InstructionsPage3,
+    InstructionsPage4,
+    InstructionsPage5,
+    InstructionsPage6,
+    InstructionsPage7,
+    SetOppModelPage1,
+    SetOppModelPage2,
+    WaitingPageTimer,
+    AccomDynamPage,
+    WaitingPage,
+    Results,
+    WaitPageBetweenPartner,
     PersonalityTestPage,
     PaymentPage
 ]
