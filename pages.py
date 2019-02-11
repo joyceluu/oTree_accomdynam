@@ -330,7 +330,7 @@ class WaitingPage(WaitPage):
                     p.participant.vars['disagree_count'] += 1
                     p.participant.vars['success_pairs'] = []
 
-            if len(self.group.get_player_by_id(1).participant.vars['success_pairs']) == len(self.group.get_player_by_id(1).participant.vars['outcome_pairs']):
+            if len(self.group.get_player_by_id(1).participant.vars['success_pairs']) == 10:
                 for p in self.group.get_players():
                     p.participant.vars['end_experiment'] = True
                     p.participant.vars['reach_equilibrium'] = True
